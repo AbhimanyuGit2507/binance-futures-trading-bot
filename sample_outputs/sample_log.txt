@@ -1,0 +1,14 @@
+2026-05-08 18:15:40,435 | v0.2.0 | INFO | logging initialized version=0.2.0
+2026-05-08 18:15:40,440 | v0.2.0 | INFO | validated order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-05-08 18:15:41,351 | v0.2.0 | INFO | request place_market_order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001'}
+2026-05-08 18:15:41,473 | v0.2.0 | INFO | response place_market_order {'orderId': 13120703583, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJbf25cd7460e8eb878cbcb1', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'side': 'BUY'}
+2026-05-08 18:15:46,055 | v0.2.0 | INFO | logging initialized version=0.2.0
+2026-05-08 18:15:46,060 | v0.2.0 | INFO | validated order {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '80000'}
+2026-05-08 18:15:46,910 | v0.2.0 | INFO | request place_limit_order {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': '0.001', 'price': '80000.0'}
+2026-05-08 18:15:47,099 | v0.2.0 | INFO | response place_limit_order {'orderId': 13120703872, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ6925f248fb51ba86784fe1', 'price': '80000.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'SELL'}
+2026-05-08 18:15:00,768 | v0.2.0 | INFO | logging initialized version=0.2.0
+2026-05-08 18:15:00,772 | v0.2.0 | INFO | validated order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.00015'}
+2026-05-08 18:15:01,259 | v0.2.0 | ERROR | unexpected order placement failure
+bot.exceptions.ValidationError: quantity 0.00015 does not match step size 0.0001 for BTCUSDT
+
+The log file records request and response payloads with version-tagged entries. Precision validation errors are raised before any exchange request is sent.
